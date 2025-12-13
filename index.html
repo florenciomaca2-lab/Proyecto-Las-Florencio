@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Florencio | Tienda Online</title>
+    <!--Fuente Pacifico-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <!--Fuente Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header .container-fluid>
+        <strong class="banner container-fluid">RENOVAMOS SHOWROOM - TODO EN SALE - HASTA 50% OFF !</strong>
+
+        <h1 id="titulo">Las Florencio</h1>
+
+        <!--Navbar principal-->
+        <nav class="navbar navbar-expand-lg bg-bordo navbar-dark shadow-sm sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MENU</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item mx-0"> <a class="nav-link" href="pages/PANTALONES.html">Pantalones</a>
+                        </li>
+                        <li class="nav-item mx-0"> <a class="nav-link" href="pages/REMERAS.html">Remeras</a>
+                        </li>
+                        <li class="nav-item mx-0"> <a class="nav-link active" aria-current="page"
+                                href="index.html">Home</a>
+                        </li>
+                    </ul>
+                    <!--Boton Buscar-->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
+
+                        <button class="btn-outline-bordo d-flex align-items-center" type="submit">
+                            <i class="bi bi-search"></i>
+                            Buscar
+                        </button>
+                    <!--Boton Ver Carrito-->
+                        <button type="button" class="btn btn-outline-bordo bg-light position-relative" title="Ver Carrito">
+                            <i class="bi bi-bag"></i>
+                            <span
+                                class="position-absolute translate-middle badge rounded-pill bg-danger">
+                                0 <span class="visually-hidden">Productos en el carrito</span>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--Foto de Portada-->
+        <figure class="portada"><img src="./img/PORTADA.jpg" alt="PORTADA"></figure>
+
+    </header>
+
+    <!--Links Redes Sociales-->
+    <main class="container mt-5">
+        <h2 class="text-center mb-4 fw-bold seguinos">Seguinos en nuestras Redes</h2>
+
+        <section>
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow-sm border-0 text-center h-100 p-4">
+                        <i class="bi bi-instagram fs-1 mb-3 icono-instagram"></i>
+                        <a href="https://www.instagram.com/lasflorencio/" target="_blank"
+                            class="d-block py-2 fw-bold text-decoration-none fondo-instagram">
+                            @LasFlorencio
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow-sm border-0 text-center h-100 p-4">
+                        <i class="bi bi-facebook fs-1 mb-3 icono-facebook"></i>
+                        <a href="https://www.facebook.com/lasflorencio" target="_blank"
+                            class="d-block py-2 fw-bold text-decoration-none fondo-facebook">
+                            @LasFlorencio
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!--Pie de Pagina-->
+    <footer class="bg-rosa text-danger pt-5 pb-4 container">
+        <div class="row text-center text-md-start">
+
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 fw-bold">NAVEGACIÓN</h5>
+                <p><a href="index.html" class="text-danger" style="text-decoration: none;">Inicio</a></p>
+                <p><a href="pages/PANTALONES.html" class="text-danger" style="text-decoration: none;">Pantalones</a>
+                </p>
+                <p><a href="pages/REMERAS.html" class="text-danger" style="text-decoration: none;">Remeras</a>
+                </p>
+            </div>
+
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 fw-bold">MEDIOS DE PAGO</h5>
+                <p class="mb-0">Efectivo</p>
+                <p>Transferencia</p>
+            </div>
+
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 fw-bold">CONTACTANOS</h5>
+
+                <!--Enlace de WP-->
+                <p>
+                    <a href="https://wa.link/64c0zq" target="_blank" class="text-danger" style="text-decoration: none;">
+                        <i class="bi bi-whatsapp"></i>
+
+                        2235504962
+                    </a>
+                </p>
+                <i class="bi bi-envelope me-3"></i> florenciomaca2@gmail.com
+                </p>
+                <p>
+                    <i class="bi bi-geo-alt me-3"></i> La Rioja 3342
+                </p>
+            </div>
+
+            <!--Formas de Envio-->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 fw-bold">Formas de Envío</h5>
+                <p class="d-flex align-items-center justify-content-center justify-content-md-start">
+                    <i class="bi bi-box-seam me-2 fs-4"></i> Correo Argentino
+                </p>
+                <p>
+                    <i class="bi bi-truck me-2"></i> Retiro en SHOWROOM
+                </p>
+            </div>
+
+        </div>
+
+        <hr class="mb-4">
+
+        <div class="row align-items-center">
+            <div class="col-12">
+                <p class=" fw-bold text-center text-black">
+                    © 2025 Las Florencio. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
