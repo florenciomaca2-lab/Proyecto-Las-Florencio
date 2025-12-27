@@ -12,24 +12,29 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap"
         rel="stylesheet">
+
     <!--Fuente Open Sans-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-    <!-- CSS -->
-    <link rel="stylesheet" href="../CSS/style.css">
+
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-    <header>
-        <strong class="banner container-fluid">RENOVAMOS SHOWROOM - TODO EN SALE - HASTA 50% OFF !</strong>
+    <header class="header">
+        <div class="banner">
+            <strong>RENOVAMOS SHOWROOM - TODO EN SALE - HASTA 50% OFF !</strong>
+        </div>
 
-        <h1 id="titulo">Las Florencio</h1>
+        <h1 class="titulo">Las Florencio</h1>
 
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg bg-bordo navbar-dark shadow-sm sticky-top">
@@ -56,7 +61,6 @@
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
                         <button class="btn-outline-bordo d-flex align-items-center" type="submit">
                             <i class="bi bi-search"></i>
-                            Buscar
                         </button>
                         <!--Boton Ver Carrito-->
                         <button type="button" class="btn btn-outline-bordo bg-light position-relative"

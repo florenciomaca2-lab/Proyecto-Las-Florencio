@@ -1,0 +1,11 @@
+@use "./colors" as *;
+
+%btn-base {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px $colorSombraNegra;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}

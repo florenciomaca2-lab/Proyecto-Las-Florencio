@@ -1,0 +1,80 @@
+@use "../variables/colors" as *;
+@use "../variables/extend" as*;
+@use "../variables/mixins" as *;
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    font-family: "Open Sans", sans-serif !important;
+    background-color: $colorRojoClaro;
+    color: $colorBordoOscuro;
+}
+
+/*Todos los títulos de la web*/
+.titulo {
+    margin: 2rem 0;
+    color: $colorBordo;
+    text-align: center;
+    font-family: "pacifico", cursive !important;
+    font-size: 5rem;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px $colorSombraNegra;
+}
+
+/*Banner de Hot Sale*/
+.banner {
+    @include flex-center(column);
+    width: 100%;
+    background-color: $colorBordoClaro;
+    color: $colorBlanco;
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+    letter-spacing: 2px;
+
+}
+
+.navbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-rosa {
+    background-color: $colorRojoClaro !important;
+}
+
+.bg-bordo {
+    background-color: $colorBordoClaro !important;
+}
+
+.btn-outline-bordo {
+    @extend %btn-base;
+    color: $colorBordoClaro;
+    border: 1px solid $colorBordoClaro;
+    background-color: transparent;
+
+ &hover {
+    background-color: $colorBordoClaro;
+    color: $colorBlanco;
+    border-color: $colorBordoClaro;
+        box-shadow: 0 4px 6px $colorSombraNegra;
+}
+}
+
+.portada {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+
+    /*Margen arriba y abajo*/
+    img {
+        width: 100%;
+        /*Ocupa todo el ancho*/
+        height: auto;
+    }
+}

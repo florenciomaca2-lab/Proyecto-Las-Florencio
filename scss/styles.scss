@@ -1,1 +1,12 @@
-@import "./layout/header"
+@use "variables/colors" as *;
+@use "variables/mixins" as *;
+@use "variables/extend" as *;
+@use "layout/header" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
