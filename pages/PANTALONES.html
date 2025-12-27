@@ -34,7 +34,7 @@
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg bg-bordo navbar-dark shadow-sm sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">HOME</a>
+                <a class="navbar-brand" href="../index.html">HOME</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -45,8 +45,9 @@
                         </li>
                         <li class="nav-item mx-0"> <a class="nav-link" href="REMERAS.html">Remeras</a>
                         </li>
-                        <li class="nav-item mx-0"> <a class="nav-link active" aria-current="page"
-                                href="../index.html">Home</a>
+                        <li class="nav-item mx-0"> <a class="nav-link" href="VESTIDOS.html">Vestidos</a>
+                        </li>
+                        <li class="nav-item mx-0"> <a class="nav-link" href="ABRIGOS.html">Abrigos</a>
                         </li>
                     </ul>
 
@@ -71,92 +72,72 @@
         </nav>
 
         <!--Listado de Pantalones-->
-        <main class="container mt-5 articulos">
+        <main class="container mt-5">
             <h2 class="articulos-titulo mb-4 text-start">Pantalones</h2>
 
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 justify-content-star">
+            <section class="articulos">
+                <article class="producto">
+                    <img src="../img/BabuchaEcocuero.jpg" class="card-img-top" alt="BabuchaEcocuero">
+                    <h3>Babucha Ecocuero</h3>
+                    <p>$20.000</p>
+                    <label for="talle1" class="me-2 fw-normal">Talle</label>
+                    <select name="Talle" id="talle1" class="form-select form-select-sm w-auto">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
 
-                <div class="col">
-                    <article class="card h-100 shadow-sm">
-                        <img src="../img/BabuchaEcocuero.jpg" class="card-img-top" alt="BabuchaEcocuero">
-                        <div class="card-body text-center">
-                            <h3 class="card-title">Babucha Ecocuero</h3>
-                            <p class="card-text fw-bold">$20.000</p>
+                    <button class="btn btn-outline-bordo w-100">Agregar al Carrito</button>
+                </article>
 
-                            <div class="d-flex justify-content-center align-items-center mb-3">
-                                <label for="talle1" class="me-2 fw-normal">Talle</label>
-                                <select name="Talle" id="talle1" class="form-select form-select-sm w-auto">
-                                    <option value="S">S</option>
-                                    <option value="M">M</option>
-                                    <option value="L">L</option>
-                                </select>
-                            </div>
+                <article class="producto">
+                    <img src="../img/JoggerRusticoCameron.jpg" class="card-img-top" alt="JoggerCameron">
+                    <h3>Jogger Cameron</h3>
+                    <p>$15.000</p>
+                    <label for="talle2" class="me-2 fw-normal">Talle</label>
+                    <select name="Talle" id="talle2" class="form-select form-select-sm w-auto">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
 
-                            <button class="btn btn-outline-bordo w-100">Agregar al Carrito</button>
-                        </div>
-                    </article>
-                </div>
+                    <button class="btn btn-outline-bordo w-100">Agregar al Carrito</button>
+                </article>
 
-                <div class="col">
-                    <article class="card h-100 shadow-sm">
-                        <img src="../img/JoggerRusticoCameron.jpg" class="card-img-top" alt="JoggerCameron">
-                        <div class="card-body text-center">
-                            <h3 class="card-title">Jogger Cameron</h3>
-                            <p class="card-text fw-bold">$15.000</p>
+                <article class="producto">
+                    <img src="../img/PalazzoTiras.jpg" class="card-img-top" alt="PalazzoTiras">
+                    <h3>Palazzo Duo</h3>
+                    <p>$13.000 Talle U</p>
 
-                            <div class="d-flex justify-content-center align-items-center mb-3">
-                                <label for="talle2" class="me-2 fw-normal">Talle</label>
-                                <select name="Talle" id="talle2" class="form-select form-select-sm w-auto">
-                                    <option value="S">S</option>
-                                    <option value="M">M</option>
-                                    <option value="L">L</option>
-                                </select>
-                            </div>
-
-                            <button class="btn btn-outline-bordo w-100">Agregar al Carrito</button>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col">
-                    <article class="card h-100 shadow-sm">
-                        <img src="../img/PalazzoTiras.jpg" class="card-img-top" alt="PalazzoTiras">
-                        <div class="card-body text-center">
-                            <h3 class="card-title">Palazzo Duo</h3>
-                            <p class="card-text fw-bold">$13.000 Talle U</p>
-
-                            <button class="btn btn-outline-bordo mt-4 w-100">Agregar al Carrito</button>
-                        </div>
-                    </article>
-                </div>
-
-            </div>
+                    <button class="btn btn-outline-bordo mt-4 w-100">Agregar al Carrito</button>
+                </article>
+            </section>
         </main>
 
         <footer class="bg-rosa text-danger pt-5 pb-4">
             <div class="container">
-                <div class="row text-center text-md-start">
-
-                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <div class="footer-grid">
+                    <section class="footer-col">
                         <h5 class="text-uppercase mb-4 fw-bold">NAVEGACIÓN</h5>
-                        <p><a href="../index.html" class="text-danger" style="text-decoration: none;">Inicio</a></p>
-                        <p><a href="PANTALONES.html" class="text-danger" style="text-decoration: none;">Pantalones</a>
+                        <p><a href="index.html" class="text-danger" style="text-decoration: none;">Inicio</a></p>
+                        <p><a href="pages/PANTALONES.html" class="text-danger"
+                                style="text-decoration: none;">Pantalones</a>
                         </p>
-                        <p><a href="REMERAS.html" class="text-danger" style="text-decoration: none;">Remeras</a>
+                        <p><a href="pages/REMERAS.html" class="text-danger" style="text-decoration: none;">Remeras</a>
                         </p>
                         <p><a href="ABRIGOS.html" class="text-danger" style="text-decoration: none;">Abrigos</a>
                         </p>
                         <p><a href="VESTIDOS.html" class="text-danger" style="text-decoration: none;">Vestidos</a>
                         </p>
-                    </div>
+                    </section>
 
-                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <section class="footer-col">
                         <h5 class="text-uppercase mb-4 fw-bold">MEDIOS DE PAGO</h5>
                         <p class="mb-0">Efectivo</p>
                         <p>Transferencia</p>
-                    </div>
+                    </section>
 
-                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <section class="footer-col">
                         <h5 class="text-uppercase mb-4 fw-bold">CONTACTANOS</h5>
 
                         <!--Enlace de WP-->
@@ -169,13 +150,12 @@
                             </a>
                         </p>
                         <i class="bi bi-envelope me-3"></i> florenciomaca2@gmail.com
+                        <i class="bi bi-geo-alt me-3"></i> La Rioja 3342
                         </p>
-                        <p>
-                            <i class="bi bi-geo-alt me-3"></i> La Rioja 3342
-                        </p>
-                    </div>
+                    </section>
 
-                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <!--Formas de Envio-->
+                    <section class="footer-col">
                         <h5 class="text-uppercase mb-4 fw-bold">Formas de Envío</h5>
                         <p class="d-flex align-items-center justify-content-center justify-content-md-start">
                             <i class="bi bi-box-seam me-2 fs-4"></i> Correo Argentino
@@ -183,7 +163,7 @@
                         <p>
                             <i class="bi bi-truck me-2"></i> Retiro en SHOWROOM
                         </p>
-                    </div>
+                    </section>
 
                 </div>
 
@@ -191,7 +171,7 @@
 
                 <div class="row align-items-center">
                     <div class="col-12">
-                        <p class=" fw-bold text-center text-black">
+                        <p class="text-center text-black">
                             © 2025 Las Florencio. Todos los derechos reservados.
                         </p>
                     </div>

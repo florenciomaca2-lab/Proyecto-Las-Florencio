@@ -96,59 +96,88 @@ body {
   color: white;
 }
 
+.articulos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 15px;
+}
+
 /*Articulos en Venta*/
-.articulos-titulo { 
-    color: hwb(357 7% 62%) !important;
-    font-weight: bold;
-    font-size: 2.5rem;
-    text-align: center;
+.articulos-titulo {
+  color: hwb(357 7% 62%) !important;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 /*Imagenes Articulos */
 .card-img-top {
-    width: 100%;
-    height: 180px;
-    object-fit: cover; /* Recortar sin deformar */
-    border-radius: 10px;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  /* Recortar sin deformar */
+  border-radius: 10px;
 }
 
 /* Texto de Articulos */
 .card-title {
-    color: #800020 !important;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
+  color: #800020 !important;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 /*Precio de Articulo*/
 .card-text.fw-bold {
-    color: #333; 
-    margin: 0.5rem 0;
+  color: #333;
+  margin: 0.5rem 0;
 }
 
 .btn-outline-bordo:hover {
-    background-color: #800020 !important;
-    color: white;
-    border-color: #800020;
+  background-color: #800020 !important;
+  color: white;
+  border-color: #800020;
 }
 
 article button:hover {
   background-color: hwb(357 7% 62%) !important;
 }
 
+.form-select {
+  width: 100%;
+}
 
-@media (max-width: 768px) {
-  #titulo {
-    font-size: 3rem;
-    /* Reducir el tamaño de título */
-  }
+.producto {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
 
-  .banner {
-    font-size: 1rem;
-  }
+.producto img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
 
-  .portada img {
-    width: 100%;
-  }
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer-col h5 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.9rem;
+}
+
+.footer-col {
+  word-break: break-word;
 }
 
 /*Ajuste Responsive para teléfonos*/
@@ -164,25 +193,19 @@ article button:hover {
   }
 
   .articulos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
     text-align: center;
-    padding: 0 10px;
   }
 
-  article {
-    width: 95%;
-    margin: 1rem auto;
-    /* Centrar el artículo */
-  }
-
-  article img {
-    height: 200px;
-  }
-
-  .footer p {
-    font-size: 0.9rem;
+  .badge {
+    transform: translate(-50%, -50%) scale(0.9);
   }
 }
-
 
 /*Ajuste Responsive para Tablets*/
 @media (max-width: 800px) {
@@ -194,11 +217,26 @@ article button:hover {
     font-size: 1rem;
   }
 
+  .articulos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Ajuste Responsive Escritorio */
 @media (min-width: 1440px) {
   #titulo {
     font-size: 5rem;
+  }
+
+  .banner {
+    font-size: 1rem;
+  }
+
+  .portada img {
+    width: 100%;
   }
 }
