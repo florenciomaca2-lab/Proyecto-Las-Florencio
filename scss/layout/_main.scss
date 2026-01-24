@@ -1,0 +1,53 @@
+@use "../variables/colors" as *;
+@use "../variables/extend" as *;
+@use "../variables/mixins" as *;
+
+.seguinos-titulo {
+    font-family: 'Pacifico', cursive !important;
+    text-align: center;
+    color: $colorBordo; 
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.redes-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; 
+
+    //Para DESKTOP//
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: center;
+        gap: 4rem;
+    }
+}
+
+.redes-item {
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: rgba($colorBlanco, 0.5);
+    border-radius: 10px;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+    
+    .icono-social {
+        font-size: 1.8rem;
+        &.inst { color: #E1306C; } 
+        &.face { color: #1877F2; } 
+    }
+}
+
+.redes-link {
+    font-family: 'Open Sans', sans-serif;
+    color: $colorBordoOscuro;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+}

@@ -2,8 +2,9 @@
 @use "variables/mixins" as *;
 @use "variables/extend" as *;
 @use "layout/header" as *;
+@use "layout/main" as *;
 
-// Base reset para responsive
+// Base reset para responsive //
 * {
   box-sizing: border-box;
 }
@@ -17,5 +18,3 @@ img {
   height: auto;
   display: block;
 }
-
-
