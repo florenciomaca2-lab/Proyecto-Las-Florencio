@@ -92,23 +92,45 @@ body {
   padding: 0;
   margin: 0;
 }
-.navbar .navbar-toggler {
-  border: none;
-  padding: 0;
+@media (min-width: 992px) {
+  .navbar .navbar-brand {
+    margin-right: 40px;
+  }
 }
-.navbar .navbar-toggler:focus {
-  box-shadow: none;
+.navbar .navbar-nav {
+  display: flex;
+}
+@media (min-width: 992px) {
+  .navbar .navbar-nav {
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+  }
 }
 .navbar .navbar-collapse .nav-link {
   padding: 0.7rem 0;
-  font-size: 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
   text-transform: uppercase;
+  color: white !important;
+}
+@media (max-width: 991px) {
+  .navbar .navbar-collapse .nav-link {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+.navbar .navbar-collapse .nav-link:hover {
+  color: #f8e3e3 !important;
 }
 .navbar form {
-  padding: 1.5rem 0;
+  display: flex;
   align-items: center;
   gap: 10px;
+}
+@media (min-width: 992px) {
+  .navbar form {
+    padding: 0;
+    margin-left: 20px;
+  }
 }
 .navbar form .form-control {
   border-radius: 4px;
