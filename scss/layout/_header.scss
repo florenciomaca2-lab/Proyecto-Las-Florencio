@@ -58,9 +58,6 @@ body {
   padding-left: 20%;
 animation: scroll-text 15s linear infinite;
 width: max-content;
-
-//Tamaño para TABLET/PC//
-
 }
 
 @keyframes scroll-text {
@@ -69,9 +66,29 @@ width: max-content;
 }
 
 .navbar {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    padding: 0.4rem 1rem !important;
+
+    .container-fluid {
+        padding: 0;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .navbar-collapse {
+        .nav-link {
+            padding: 0.5rem 0;
+            font-size: 0.9rem;
+            border-bottom: 1pc solid rgba(255,255,255,0.1);
+        }
+
+        form {
+            padding-top: 1rem;
+            gap: 10px;
+        }
+    }
 }
 
 .bg-rosa {
@@ -87,24 +104,43 @@ width: max-content;
     color: $colorBordoClaro;
     border: 1px solid $colorBordoClaro;
     background-color: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    i {
+        font-size: 1.1rem;
+    }
 
  &:hover {
     background-color: $colorBordoClaro;
     color: $colorBlanco;
     border-color: $colorBordoClaro;
-        box-shadow: 0 4px 6px $colorSombraNegra;
+    box-shadow: 0 4px 8px $colorSombraNegra;
+    transform: translateY(-1px);
+}
+
+&:active {
+    transform: translateY(0)
 }
 }
 
 .portada {
+    width: 100%;
+    margin: 0 !important;
     display: flex;
     justify-content: center;
-    margin: 1rem 0;
+    line-height: 0;
 
     /*Margen arriba y abajo*/
     img {
-        width: 100%;
-        /*Ocupa todo el ancho*/
-        height: auto;
+        width: 100%; /*Ocupa todo el ancho*/
+        height: 45vh;
+        object-fit: cover;
+        object-position: center;
     }
 }
