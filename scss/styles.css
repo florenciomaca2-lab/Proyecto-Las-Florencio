@@ -24,13 +24,20 @@ body {
 
 /*Todos los títulos de la web*/
 .titulo {
-  margin: 2rem 0;
+  margin: 1rem 0;
   color: hsl(357, 68.8888888889%, 22.5%);
   text-align: center;
   font-family: "pacifico", cursive !important;
-  font-size: 5rem;
+  font-size: 2.5rem;
   letter-spacing: 1px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  line-height: 1.2;
+}
+@media (min-width: 768px) {
+  .titulo {
+    font-size: 5rem;
+    margin: 2.5rem 0;
+  }
 }
 
 /*Banner de Hot Sale*/

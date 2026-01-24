@@ -7,6 +7,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: transparent;
+    padding: 0;
 }
 
 body {
@@ -17,13 +19,23 @@ body {
 
 /*Todos los títulos de la web*/
 .titulo {
-    margin: 2rem 0;
+    width: 100%;
+    margin: 1rem 0 2rem 0 important!;
+    padding: 0;
     color: $colorBordo;
     text-align: center;
     font-family: "pacifico", cursive !important;
-    font-size: 5rem;
+    font-size: 2.5rem;
     letter-spacing: 1px;
     text-shadow: 2px 2px 4px $colorSombraNegra;
+    line-height: 1.2;
+    margin-bottom: 2rem !important;
+
+    //Tamaño para TABLET/PC//
+@media (min-width: 768px) {
+    font-size: 5rem;
+    margin: 2.5rem 0;
+}
 }
 
 /*Banner de Hot Sale*/
@@ -46,6 +58,9 @@ body {
   padding-left: 20%;
 animation: scroll-text 15s linear infinite;
 width: max-content;
+
+//Tamaño para TABLET/PC//
+
 }
 
 @keyframes scroll-text {
