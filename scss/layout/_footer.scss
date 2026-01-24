@@ -1,0 +1,64 @@
+@use "../variables/colors" as *;
+@use "../variables/extend" as *;
+@use "../variables/mixins" as *;
+
+.footer-tienda {
+    background-color: $colorBordo;
+    color: $colorBlanco;
+    padding: 2rem 0 1rem;
+    margin-top: 2rem;
+    text-align: center;
+
+
+    .footer-titulo {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.85rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+        margin-bottom: 0.8rem;
+        color: $colorRojoClaro;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+    .footer-links, .footer-info {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        li {
+            margin-bottom: 0.4rem;
+            font-size: 0.8rem;
+            color: rgba($colorBlanco, 0.8);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            a {
+                color: inherit;
+                text-decoration: none;
+                transition: color 0.3s;
+                &:hover { color: $colorBlanco; }
+            }
+        }
+    }
+
+.footer-envio {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 10px;
+    }
+
+    .footer-bottom {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba($colorBlanco, 0.1);
+        text-align: center;
+        font-size: 0.7rem;
+        color: rgba($colorBlanco, 0.5);
+    }
+}
