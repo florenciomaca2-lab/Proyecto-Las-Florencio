@@ -295,6 +295,34 @@ body {
   margin-top: auto !important;
 }
 
+.titulo-articulos {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: hsl(357, 68.8888888889%, 22.5%);
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+  display: block;
+}
+.titulo-articulos::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f8e3e3;
+  margin: 10px auto 0;
+}
+@media (max-width: 768px) {
+  .titulo-articulos {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+}
+
 .footer-tienda {
   background-color: hsl(357, 68.8888888889%, 22.5%);
   color: white;
