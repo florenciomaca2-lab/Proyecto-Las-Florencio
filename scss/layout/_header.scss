@@ -1,5 +1,5 @@
 @use "../variables/colors" as *;
-@use "../variables/extend" as*;
+@use "../variables/extend" as *;
 @use "../variables/mixins" as *;
 
 .header {
@@ -28,14 +28,29 @@ body {
 
 /*Banner de Hot Sale*/
 .banner {
-    @include flex-center(column);
-    width: 100%;
-    background-color: $colorBordoClaro;
-    color: $colorBlanco;
-    font-size: 1.2rem;
-    padding: 0.6rem 1rem;
-    letter-spacing: 2px;
+  width: 100%;
+  background-color: $colorBordoClaro;
+  display: flex;
+  padding: 0.3rem 0;
+}
 
+.banner-texto {
+  margin: 0;
+  color: $colorBlanco;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
+  padding-left: 20%;
+animation: scroll-text 15s linear infinite;
+width: max-content;
+}
+
+@keyframes scroll-text {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .navbar {
@@ -58,7 +73,7 @@ body {
     border: 1px solid $colorBordoClaro;
     background-color: transparent;
 
- &hover {
+ &:hover {
     background-color: $colorBordoClaro;
     color: $colorBlanco;
     border-color: $colorBordoClaro;
